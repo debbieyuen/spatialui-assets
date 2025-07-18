@@ -1,17 +1,16 @@
-# Ensure text files use LF (optional but good practice)
+# Text files
 *.swift text eol=lf
 *.md text eol=lf
 *.plist text eol=lf
 *.json text eol=lf
 
-# Binary files: mark as binary to avoid diffing
-*.usdz binary
-*.usda binary
-*.reality binary
+# Reality Composer packages: treat .usda as text, others as binary
+*.usda text eol=lf
 *.rcproject binary
 *.rkassets binary
+*.usdz binary
+*.reality binary
 
-# Optional: if you enable Git LFS later, uncomment:
+# Optional: Git LFS later
 # *.usdz filter=lfs diff=lfs merge=lfs -text
 # *.reality filter=lfs diff=lfs merge=lfs -text
-# *.rcproject filter=lfs diff=lfs merge=lfs -text

@@ -1,58 +1,32 @@
 # macOS system files
 .DS_Store
-.AppleDouble
-.LSOverride
 
 # Xcode general
 DerivedData/
 *.xcuserstate
 *.xcworkspace/xcuserdata/
-*.xcuserdatad
 *.moved-aside
-*.xcuserstate
 *.xccheckout
-.idea/
-*.xcodeproj/project.xcworkspace/xcuserdata/
 
-# Xcode build & logs
+# Build & intermediate outputs
 build/
 *.log
 
-# SwiftPM (if used)
+# SwiftPM
 .build/
 .swiftpm/xcode/package.xcworkspace/
 
-# Reality Composer / RealityKit artifacts
-*.realityarchive
+# Reality Composer/RealityKit:
+# ➔ Keep .rkassets folders, ignore heavy exports
 *.reality
 *.usdz
-*.usda
-*.rcproject
-*.rkassets
 
-# Carthage
-Carthage/Build/
-
-# CocoaPods
+# CocoaPods, Carthage, SPM vendor
 Pods/
-Podfile.lock
+Carthage/Build/
+Packages/*/.build/
 
-# Fastlane
+# Fastlane (if used)
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
-
-# SPM Packages folder (if included)
-Packages/
-
-# Git LFS pointer files (if LFS used later, you may update)
-# *.usdz filter=lfs diff=lfs merge=lfs -text
-# *.reality filter=lfs diff=lfs merge=lfs -text
-
-# Xcode generated user data (safe to ignore, machine-local)
-*.xcuserstate
-*.xcscmblueprint
-
-# Playground specific
-timeline.xctimeline
-playground.xcworkspace
