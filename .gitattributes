@@ -1,0 +1,17 @@
+# Ensure text files use LF (optional but good practice)
+*.swift text eol=lf
+*.md text eol=lf
+*.plist text eol=lf
+*.json text eol=lf
+
+# Binary files: mark as binary to avoid diffing
+*.usdz binary
+*.usda binary
+*.reality binary
+*.rcproject binary
+*.rkassets binary
+
+# Optional: if you enable Git LFS later, uncomment:
+# *.usdz filter=lfs diff=lfs merge=lfs -text
+# *.reality filter=lfs diff=lfs merge=lfs -text
+# *.rcproject filter=lfs diff=lfs merge=lfs -text
